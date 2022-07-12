@@ -1,0 +1,289 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* Padding and border are included in the element's total width and height */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font:bold 14px Aria,sans-serif;
+}
+
+html {
+    height: 100%;
+    background: white;
+    background: radial-gradient(circle, #fff 20%, #ccc);
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14;
+    line-height: 1.5;
+}
+
+
+/* Add a white background color to the top navigation */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #7c7c7c;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.alert .alert-link {
+    font-weight: normal;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.alert-warning {
+    background-color: #0d8aff;
+    color: #f2f2f2;
+    justify-content: center;
+}
+
+.alert {
+    padding: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+#calculator {
+    width: 325px;
+    height: auto;
+
+    margin: 100px auto;
+    padding: 20px 20px 9PX;
+
+    background: #9dd2ea;
+    background: linear-gradient(#9dd2ea, #8bceec);
+    border-radius: 3px;
+    /* Using box shadows to create 3D effects */
+    box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0,0,0,0.2);
+}
+
+#screen {
+    float: right;
+
+    height: 40px;
+    width: 212px;
+
+    padding: 0 10px;
+
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    /* Insert shadow on the screen to create indent */
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+
+    /* Typography */
+    font-size: 17px;
+    line-height: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+
+/* Clear Floats to make sure #calculator includes them correctly */
+.keys, .top {
+    overflow: hidden;
+}
+
+
+/* Applying css on all the keys */
+.keys span, #clear {
+    float: left;
+    position: relative;
+    top: 0;
+    /* Specifies the type of cursor to be displayed when pointing on an element. */
+    cursor: pointer;
+
+    width: 66px;
+    height: 36px;
+
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+
+    margin: 0 7px 11px 0;
+
+    color: #888;
+    line-height: 36px;
+    text-align: center;
+
+    /* prevent selection of text inside keys */
+    user-select: none;
+
+    /* Transitions allows you to change property values smoothly  */
+    transition: all 0.2s ease;
+}
+
+
+.keys span.operator {
+    background: #FFF0F5;
+    margin-right: 0; /* 7px in previous setting*/
+}
+
+
+/* Equal Button */
+.keys span.eval {
+    background: #f1ff92;
+    box-shadow: 0px 4px #9da853;
+    color: #888e5f;
+}
+
+.keys span.eval:hover {
+    background: #abb850;
+    box-shadow: 0px 4px #717a33;
+    color: #ffffff;
+}
+
+.keys span.eqevalual:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+/* Clear Button */
+#clear {
+    background: #ff9fa8;
+    box-shadow: 0px 4px #ff7c87;
+    color: white;
+}
+
+#clear:hover {
+    background: #f68991;
+    box-shadow: 0px 4px #d3545d;
+    color: white;
+}
+
+#clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+}
+
+/* Other Buttons */
+.keys span:hover {
+    background: #5d96f9;
+    box-shadow: 0px 4px #355bf3;
+    color: white;
+}
+
+.keys span:active {
+    box-shadow: 0px 0px #355bf3;
+    top: 4px;
+}
+
+/* Add a white background color to the Footer */
+.footer {
+    background-color: rgb(255, 255, 255);
+    color: #7c7c7c;
+    display: flex;
+    padding: 14px 16px;
+    justify-content: center;  
+    bottom:0;
+    position:absolute;
+    width:100%;
+    
+     
+}
