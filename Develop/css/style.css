@@ -1,116 +1,5 @@
 @charset "UTF-8";
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    /* Padding and border are included in the element's total width and height */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    font:bold 14px Aria,sans-serif;
-}
-
-html {
-    height: 100%;
-    background: white;
-    background: radial-gradient(circle, #fff 20%, #ccc);
-    background-size: cover;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14;
-    line-height: 1.5;
-}
 
 .alert .alert-link {
     font-weight: normal;
@@ -131,7 +20,6 @@ body {
 .center {
     text-align: center;
 }
-
 
 /* Add a white background color to the Footer */
 .footer {
